@@ -16,8 +16,8 @@ Sort a matrix of positive integers using insertion and selection sort. Show how 
 # Time Complexity
 INSERTION SORT <br/>
 Best Case - O(N) <br/>
-Average Case - O(N*N) <br/>
-Worst Case - O(N*N) <br/>
+Average Case - O(N^2) <br/>
+Worst Case - O(N^2) <br/>
 
 SELECTION SORT <br/>
-Best case = Average case  = Worst case = O(N*N)
+Best case = Average case  = Worst case = O(N^2)

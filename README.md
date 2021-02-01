@@ -54,8 +54,8 @@ Selection sort- is a simple sorting algorithm. This sorting algorithm is an in-p
 ---
 
 ### Analysis
-**Time complexity**
----
+**Time complexity** <br/>
+
 INSERTION SORT <br/>
 Best Case - O(N) <br/>
 Average Case - O(N^2) <br/>
@@ -64,7 +64,7 @@ Worst Case - O(N^2) <br/>
 SELECTION SORT <br/>
 Best case = Average case  = Worst case = O(N^2) <br/>
 
-**Space Complexity**
+**Space Complexity** <br/>
 Both insertion and selection sort uses O(1) auxiliary space.
 
 ---

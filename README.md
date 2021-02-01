@@ -17,7 +17,7 @@ Sort a matrix of positive integers using insertion and selection sort. Show how 
 ## How to use code
 First of all clone the github repo <br/>
 ---
-#Download project
+#Download project <br/>
 git clone https://github.com/vidushi1012/DAA.git <br/>
 
 ---

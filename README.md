@@ -12,3 +12,12 @@ Mentor Name - Md. Meraz
 
 # Problem Statement
 Sort a matrix of positive integers using insertion and selection sort. Show how they are related and pros and cons.
+
+#Time Complexity
+INSERTION SORT
+Best Case - O(N)
+Average Case - O(N*N)
+Worst Case - O(N*N)
+
+SELECTION SORT
+Best case = Average case  = Worst case = O(N*N)

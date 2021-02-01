@@ -15,7 +15,7 @@ Sort a matrix of positive integers using insertion and selection sort. Show how 
 
 ---
 ## How to use code
-First of all clone the github repo <br/>
+
 ---
 #Download project <br/>
 git clone https://github.com/vidushi1012/DAA.git <br/>
@@ -45,15 +45,17 @@ Out:
 2 3 5 6 7 8 16 23 41
 ```
 
+---
 
-
-### Theory <br/>
+### Theory 
 Insertion sort- is a simple algorithm that works similar to the way you sort playing cards in your hands. The array is virtually split into a sorted and an unsorted part. Values from the unsorted part are picked and placed at the correct position in the sorted part.<br/>
 Selection sort- is a simple sorting algorithm. This sorting algorithm is an in-place comparison based algorithm in which the array is divided into two parts, the sorted part at the left end and the unsorted part at the right end. Initially, the sorted part is empty and the unsorted part is the entire array.
 
+---
 
 ### Analysis
 **Time complexity**
+---
 INSERTION SORT <br/>
 Best Case - O(N) <br/>
 Average Case - O(N^2) <br/>
@@ -64,6 +66,8 @@ Best case = Average case  = Worst case = O(N^2) <br/>
 
 **Space Complexity**
 Both insertion and selection sort uses O(1) auxiliary space.
+
+---
 
 ### References 
 Geeks for Geeks <br/>

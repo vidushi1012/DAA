@@ -22,9 +22,7 @@ git clone https://github.com/vidushi1012/DAA.git <br/>
 
 ---
 
-.
-.
----
+
 
 Run the code
 ```

@@ -22,9 +22,6 @@ git clone https://github.com/vidushi1012/DAA.git <br/>
 
 ---
 
-#go to assignment-1
-cd assignment_01
-
 .
 .
 ---

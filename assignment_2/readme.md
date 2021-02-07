@@ -7,11 +7,11 @@
 |    IIT2019028  |   Shubham Netam | Shubham11Netam | 
 |    IIT2019029 |   Puneet Singhwaiya | Puneet140500 |
 
-**Group No-**"9"
+**Group No-** 9
 
-**Faculty Name-**"Dr. Mohammed Javed"
+**Faculty Name-**Dr. Mohammed Javed
 
-**Mentor Name-** "Md. Meraz"
+**Mentor Name-** Md. Meraz
 
 ---
 ## Problem Statement
@@ -19,7 +19,7 @@ Prepare a matrix of random characters of size 50×50 and check for valid English
 
 ---
 ## How to use code
-Just download the code from the repository and run it on any python compiler
+
 ```
 #Download project
 https://github.com/vidushi1012/DAA/assignment_2.git
@@ -44,10 +44,6 @@ touch main.py
 Run the code
 ```
 python main.py
-```
-OUTPUT
-```
-Curve fitting using Least squares Approximation
 ```
 ---
 

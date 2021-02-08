@@ -9,7 +9,7 @@
 
 **Group No-** 9
 
-**Faculty Name-**Dr. Mohammed Javed
+**Faculty Name-** Dr. Mohammed Javed
 
 **Mentor Name-** Md. Meraz
 
@@ -36,8 +36,7 @@ cd assignment_02
 #Create file
 touch readme.md
 touch main.py
-.
-.
+
 ```
 ---
 

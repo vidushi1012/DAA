@@ -81,7 +81,7 @@ Therefore he time complexity of the algorithm will be O(n^2)
 
 As the size for the matrix is fixed according to the problem
 statement thus, the space used by any of the algorithm will be
-constant. Hence the space complexity is O(1).
+constant. Hence the space complexity is O(n^2).
 
 ---
 

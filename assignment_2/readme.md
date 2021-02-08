@@ -64,7 +64,7 @@ at, car
 ---
 
 ### Theory
-For solving our problem we have used a python library PyEnchant to check if a word is valid english word or not. PyEnchant is a spell checking library for Python, based on the excellent Enchant library. PyEnchant combines all the functionality of the underlying Enchant library with the flexibility of Python and a nice “Pythonic” object-oriented interface.For generating random characters we have used Python random.choice() function.Python random module‘s random.choice() function returns a random element from the non-empty sequence. we can use the random.choice() function for selecting a random password from word-list, Selecting a random item from the available data
+For solving our problem we have used a python library PyEnchant to check if a word is valid english word or not. PyEnchant is a spell checking library for Python, based on the excellent Enchant library. PyEnchant combines all the functionality of the underlying Enchant library with the flexibility of Python and a nice “Pythonic” object-oriented interface.For generating random characters we have used Python random.choice() function.Python random module‘s random.choice() function returns a random element from the non-empty sequence. we can use the random.choice() function for selecting a random password from word-list, Selecting a random item from the available data.
 
 ---
 

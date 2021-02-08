@@ -22,7 +22,7 @@ Prepare a matrix of random characters of size 50×50 and check for valid English
 
 ```
 #Download project
-https://github.com/vidushi1012/DAA/assignment_2.git
+git clone https://github.com/vidushi1012/DAA.git
 ```
 Project Initialize 
 ```

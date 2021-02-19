@@ -72,7 +72,7 @@ The element is present at index 1.
 ---
 
 ### Theory
-Quaternary search is like binary search, but divides the
+Quaternary search is just like binary search, but divides the
 array into four parts instead of two. After evenly dividing the
 array, the three divisors are compared to the input value. If
 it matches the index is returned. If not then algorithm check

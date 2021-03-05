@@ -1,0 +1,220 @@
+\documentclass[conference]{IEEEtran}
+
+
+  	\usepackage[pdftex]{graphicx}
+  	\graphicspath{{../pdf/}{../jpeg/}}
+	\DeclareGraphicsExtensions{.pdf,.jpeg,.png}
+
+	\usepackage[cmex10]{amsmath}
+	\usepackage{mathabx}
+	\usepackage{algorithmic}
+	\usepackage{array}
+	\usepackage{mdwmath}
+	\usepackage{mdwtab}
+	\usepackage{eqparbox}
+	\usepackage{url}
+	\hyphenation{op-tical net-works semi-conduc-tor}
+
+
+\begin{document}
+
+\title{\LARGE Quaternary Search}
+
+% \author{\authorblockN{Leave Author List blank for your IMS2013 Summary (initial) submission.\\ IMS2013 will be rigorously enforcing the new double-blind reviewing requirements.}
+% \authorblockA{\authorrefmark{1}Leave Affiliation List blank for your Summary (initial) submission}}
+
+ \author{\authorblockN{Vidushi Pathak(IIT2019027), \,Shubham Netam(IIT2019028),\, Puneet Singhwaiya(IIT2019029)\\B.Tech. 4th semester, Department of Information Technology.}
+ \authorblockA{Indian Institute of Information Technology, Allahabad}}
+
+\maketitle
+
+\begin{abstract}
+In this paper we have discussed an algorithm to implement Quaternary Search. We have designed two algorithm, one is iterative and the other one is recursive. We have also discussed the time and space complexity of both the methods.
+\end{abstract}
+
+\IEEEoverridecommandlockouts
+
+
+\IEEEpeerreviewmaketitle
+
+
+% ===================
+% # I. Introduction #
+% ===================
+
+\section{Introduction}
+Quaternary search is like binary search, but divides the array into four parts instead of two. After evenly dividing the array, the three divisors are compared to the input value. If it matches the index is returned. If not then algorithm check for the value in sub array that contains the value. This search algorithm works on the principle of divide and conquer. For this algorithm to work properly, the data collection should be in the sorted form.
+
+
+
+
+\begin{figure}[ht!] %!t
+\centering
+\includegraphics[width=3.5in,height=4in]{algo.png}
+\caption{Representation of quaternary search.}
+\label{Courant_2}
+\end{figure}
+
+
+
+
+
+\section{Algorithm}
+Our algorithm will first divide the array into 4 parts by finding three mid-points then it will check if the element which we want to find is present at any of the mid-points or not. If present we will return the index else we will check in which subarray the element is present and then move the mid-point accordingly.
+
+\section{Pseudo Code}
+\subsection{Iterative Method}\\\\
+Procedure quaternarySearch\\
+   A ← sorted array\\
+   n ← size of array\\
+   x ← value to be searched\\\\
+Set left = 0\\
+Set right = n-1\\\\
+while left \textless=  right\\
+
+mid1 = left + (right-1)/4\\
+\indent
+mid2 = mid1 + (right-1)/4\\
+ \indent
+mid3 = mid2 + (right-1)/4\\\\
+ \indent
+ if arr[mid1] is equal to x\\
+ \indent
+  \hspace{1cm}return mid1\\
+  
+if arr[mid2] is equal to x\\
+ \indent
+  \hspace{1cm}return mid2\\
+  
+ if arr[mid3] is equal to x\\
+ \indent
+  \hspace{1cm}return mid3\\
+  
+  if arr[mid1] \textgreater x\\
+  \indent
+  \hspace{1cm}right = mid1-1\\
+  
+  else if arr[mid2] \textgreater x\\
+  \indent
+   \hspace{1cm}left = mid1+1\\
+   \indent
+  \hspace{1cm}right = mid2-1\\
+  
+  else if arr[mid3] \textless x\\
+  \indent
+   \hspace{1cm}left = mid3+1\\
+   
+  else if arr[mid2] \textless x and arr[mid3] \textgreater x\\
+  \indent
+   \hspace{1cm}left = mid2+1\\
+   \indent
+   \hspace{1cm}right = mid3-1\\
+   end while
+   
+\noindent return -1\\
+end procedure\\\\
+
+\subsection{Recursive Method}\\\\
+Procedure quaternarySearch\\
+   A ← sorted array\\
+   n ← size of array\\
+   x ← value to be searched\\\\
+Set left = 0\\
+Set right = n-1\\\\
+if left \textless=  right\\
+
+mid1 = left + (right-1)/4\\
+\indent
+mid2 = mid1 + (right-1)/4\\
+ \indent
+mid3 = mid2 + (right-1)/4\\\\
+ \indent
+ if arr[mid1] is equal to x\\
+ \indent
+  \hspace{1cm}return mid1\\
+  
+if arr[mid2] is equal to x\\
+ \indent
+  \hspace{1cm}return mid2\\
+  
+ if arr[mid3] is equal to x\\
+ \indent
+  \hspace{1cm}return mid3\\
+  
+  if arr[mid1] \textgreater x\\
+  \indent
+  \hspace{1cm}return quaternarySearch(arr,left,mid1-1,x)\\
+  
+  else if arr[mid2] \textgreater x\\
+  \indent
+   \hspace{1cm}return quaternarySearch(arr,mid1+1,mid2-1,x)\\
+  
+  else if arr[mid3] \textless x\\
+  \indent
+   \hspace{1cm}return quaternarySearch(arr,mid3+1,right,x)\\
+   
+  else if arr[mid2] \textless x and arr[mid3] \textgreater x\\
+  \indent
+   \hspace{1cm}return quaternarySearch(arr,mid2+1,mid3-1,x)\\
+ 
+   
+\noindent return -1\\
+end procedure\\\\
+
+\section{Experimental Study}\\
+\subsection{Apriori Analysis}  
+Apriori analysis means,analysis is performed prior
+to running it on a specific system.This analysis is
+a stage where a function is defined using some theoretical model.Hence,we determine the time and
+space complexity of an algorithm by just looking
+at the algorithm rather than running it on a particular system with a different memory,processor,
+and compiler.So,as we discussed under the heading
+complexity analysis we arrived at the conclusion
+that the best time complexity is O(log(n)).
+\includegraphics[width=3.5in,height=2.5in]{Fg01005.png}
+\subsection{Aposteriori Analysis}
+Aposteriori analysis of an algorithm means we per-
+form analysis of an algorithm only after running it on a system.It directly depends on the system
+and changes from system to system.So for the a
+aposteriori analysis of the algorithm,we have run
+our code on the compiler and get values of the
+time.
+\includegraphics[width=3.5in,height=2.5in]{graph.png}
+\includegraphics[width=3.5in,height=3in]{2021-02-16 (9).png}
+% ==================
+% # V. COMPLEXITY ANALYSIS #
+% ==================
+
+\section{Complexity Analysis}
+\subsection{Time Complexity}\\
+In this algorithm at each iteration the array is divided by 4. Suppose length of array is n and after K iteration the length of array becomes 1.Then we get,\\
+n/4^{k} = 1\\
+n = 4^{k}\\
+log(n) = log(4^{k})\\
+log(n) = klog(4)\\
+k=log(n)\\
+
+Therefore, Time complexity is O(log(n))\\
+
+\subsection{Space Complexity}\\
+In the iterative method, the space complexity would be O(1). While in the recursive method, the space complexity would be O(log(n)). 
+
+
+
+
+% ==================
+% # IV. CONCLUSION #
+% ==================
+
+\section{Conclusion}
+Through this assignment we concluded that although Quaternary can seem faster than binary search, but is not because it do more comparisons per step.
+
+
+% ==============
+% # REFERENCES #
+% ==============
+
+\section{References}
+\noindent 1.https://stackoverflow.com/questions/39845641/quaternary-search-algorithm\\
+2.https://github.com/estensen/quaternary-search
+\end{document}

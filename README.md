@@ -65,7 +65,7 @@ SELECTION SORT <br/>
 Best case = Average case  = Worst case = O(N^2) <br/>
 
 **Space Complexity** <br/>
-Both insertion and selection sort uses O(1) auxiliary space.
+Both insertion and selection sort uses O(1) auxiliary space
 
 ---
 
